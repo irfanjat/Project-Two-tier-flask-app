@@ -7,7 +7,7 @@ def get_message():
     conn = sqlite3.connect("database.db")
     cursor = conn.cursor()
     cursor.execute("CREATE TABLE IF NOT EXISTS messages (text TEXT)")
-    cursor.execute("INSERT INTO messages VALUES ('Deployed Updated to check via Jenkins CI/CD 🚀')")
+    cursor.execute("INSERT INTO messages VALUES ('Deployed via Jenkins CI/CD 🚀')")
     conn.commit()
     cursor.execute("SELECT text FROM messages")
     msg = cursor.fetchone()[0]
