@@ -23,8 +23,7 @@ This project demonstrates a **two-tier Flask web application** deployed automati
 - **AWS Deployment**  
   - Publicly accessible app through EC2 public IP
   - Security group configured for HTTP access
-- **Resume / Portfolio Ready**  
-  - Demonstrates end-to-end DevOps workflow
+
 
 ---
 
@@ -84,31 +83,7 @@ Should see:
 Two Tier Flask Application
 Deployed via Jenkins CI/CD 🚀
 
-Jenkins Pipeline (Jenkinsfile)
-pipeline {
-    agent any
-    stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/irfanjat/Two-tier-flask-app.git'
-            }
-        }
-        stage('Build Docker Image') {
-            steps {
-                sh 'docker build -t flask-devops-app .'
-            }
-        }
-        stage('Deploy Container') {
-            steps {
-                sh '''
-                docker stop flask-app || true
-                docker rm flask-app || true
-                docker run -d -p 80:5000 --name flask-app flask-devops-app
-                '''
-            }
-        }
-    }
-}
+
 
 Demo
 
