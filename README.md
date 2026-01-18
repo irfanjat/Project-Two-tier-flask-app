@@ -101,4 +101,4 @@ Containerization: Docker
 
 Cloud: AWS EC2
 
-Version Control: GitHub
+Version Control: GitHub.
