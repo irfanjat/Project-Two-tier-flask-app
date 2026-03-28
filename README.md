@@ -4,7 +4,7 @@
 
 ---
 
-## 📌 Overview.
+## 📌 Overview
 
 This project demonstrates a **two-tier Flask web application** deployed automatically via a **Jenkins CI/CD pipeline**. The pipeline pulls code from GitHub, builds a Docker image, and deploys it on an **AWS EC2 instance** — making the app directly accessible in the browser.
 
