@@ -1,4 +1,4 @@
-# 🐍 Two-Tier Flask Application with Jenkins CI/CD and Docker on AWS.
+# 🐍 Two-Tier Flask Application with Jenkins CI/CD and Docker on AWS
 
 > Fully automated CI/CD pipeline using Jenkins, Docker, GitHub, and AWS EC2
 
